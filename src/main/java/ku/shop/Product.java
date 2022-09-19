@@ -12,7 +12,8 @@ public class Product {
     }
 
     public void cutStock(int quantity) {
-        stock -= quantity;
+        if(stock > 0)
+            stock -= quantity;
     }
 
     public String getName() {
